@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Vue Js teste",
+      "description": "A high-quality cotton t-shirt for true Vue.js enthusiasts.",
+      "price": 29.99,
+      "status": "active",
+      "createdAt": "2025-10-01T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Modern CSS Mug",
+      "description": "Start your day with a dose of CSS inspiration.",
+      "price": 14.5,
+      "status": "active",
+      "createdAt": "2025-10-05T14:30:00Z"
+    },
+    {
+      "id": "3",
+      "name": "JavaScript Ninja Sticker Pack",
+      "description": "A pack of 5 high-quality vinyl stickers.",
+      "price": 7.99,
+      "status": "inactive",
+      "createdAt": "2025-09-20T09:00:00Z"
+    },
+    {
+      "id": "fa74",
+      "name": "Óculos de sol",
+      "description": "Oculos de sol perfeito para dias de praia",
+      "price": 140,
+      "status": "active",
+      "createdAt": "2025-11-10T22:35:30.892Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "productId": 1,
+      "author": "Alice",
+      "rating": 5,
+      "comment": "Amazing quality, fits perfectly!",
+      "date": "2025-10-02T12:00:00Z"
+    },
+    {
+      "id": "2",
+      "productId": 1,
+      "author": "Bob",
+      "rating": 4,
+      "comment": "Great shirt, but it shrunk a little after washing.",
+      "date": "2025-10-03T15:20:00Z"
+    },
+    {
+      "id": "3",
+      "productId": 2,
+      "author": "Charlie",
+      "rating": 5,
+      "comment": "My new favorite mug for my morning coffee. The print is sharp.",
+      "date": "2025-10-06T08:45:00Z"
+    },
+    {
+      "id": "f44f",
+      "author": "Ailton Filho",
+      "rating": 3,
+      "comment": "Muito fino",
+      "productId": "fa74",
+      "date": "2025-11-10T22:36:04.608Z"
+    }
+  ]
+}
