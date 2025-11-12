@@ -1,6 +1,6 @@
 # Vue.js CRUD Application
 
-This project is a Vue.js 3 frontend that implements CRUD operations for Products and their associated Reviews, consuming a simulated API built with `json-server`.
+This project is a Vue.js 3 frontend that implements **CRUD** (Create, Read, Update, Delete) operations for Products and their associated Reviews, consuming a simulated API built with `json-server`.
 
 ## Project Structure
 
@@ -20,48 +20,53 @@ This project is a Vue.js 3 frontend that implements CRUD operations for Products
 
 ## Setup and Execution Instructions
 
-### 1. Backend (API Server)
+Para executar o projeto, você precisará iniciar o servidor *backend* (API) e a aplicação *frontend*.
 
-The backend uses `json-server` to create a mock REST API.
+### 1. Backend (API Server - usando json-server)
 
-1.  **Navigate to the backend directory:**
-    ```sh
+O backend usa o json-server para criar uma API REST simulada a partir do arquivo db.json.
+
+1.  *Navegue para o diretório do backend:*
+    sh
     cd backend
-    ```
+    
 
-2.  **Install json-server globally (if you haven't already):**
-    ```sh
+2.  *Instale o json-server globalmente (caso ainda não o tenha):*
+    sh
     npm install -g json-server
-    ```
+    # OU, se preferir instalar localmente: npm install json-server
+    
 
-3.  **Start the API server:**
-    ```sh
+3.  *Inicie o servidor da API:*
+    sh
     json-server --watch db.json --port 3000
-    ```
-    The API will be available at `http://localhost:3000`.
+    
+    > O servidor da API estará disponível em http://localhost:3000. Mantenha este terminal aberto.
 
 ### 2. Frontend (Vue.js Application)
 
-1.  **Navigate to the frontend directory:**
-    ```sh
+1.  *Navegue para o diretório do frontend:*
+    sh
     cd frontend
-    ```
+    
 
-2.  **Install project dependencies:**
-    ```sh
+2.  *Instale as dependências do projeto:*
+    sh
     npm install
-    ```
+    
 
-3.  **Run the development server:**
-    ```sh
+3.  *Inicie o servidor de desenvolvimento:*
+    sh
     npm run dev
-    ```
-    The application will be running at the address shown in your terminal (usually `http://localhost:5173`).
+    
+    > O aplicativo Vue.js estará rodando no endereço exibido no seu terminal (geralmente http://localhost:5173).
+
+---
 
 ### Environment Configuration
 
-The frontend uses a `.env` file to define the API URL. This file will be created automatically.
+O frontend utiliza um arquivo .env para definir a URL da API.
 
--   `VITE_API_URL=http://localhost:3000`
+-   VITE_API_URL=http://localhost:3000
 
-If you run the `json-server` on a different port, make sure to update this variable accordingly.
+Se você executar o json-server em uma porta diferente, certifique-se de atualizar esta variável de ambiente de acordo.
